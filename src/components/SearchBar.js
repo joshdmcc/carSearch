@@ -1,5 +1,4 @@
 import React from 'react'
-import './SearchBar.css'
 import Header from './Header'
 
 export default class SearchBar extends React.Component {

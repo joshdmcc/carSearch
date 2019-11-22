@@ -24,7 +24,7 @@ export default class App extends React.Component {
     makeCarRequest(fields) {
         carSearch.get('/v1/search', {
             params: {
-                api_key: 'PNPnI9W2697Avxgu4f9zhdJBqZn4xAgs',
+                api_key: '<MarketCheck_API_Key_here>',
                 year: fields.year.trim(),
                 make: fields.make.trim(),
                 model: fields.model.trim(),
@@ -44,7 +44,7 @@ export default class App extends React.Component {
         if (fields.location) {
             place.get('/geocode/v1/json', {
                 params: {
-                    key: 'd5e979d7e6bc48c88d452b1aaf8a0ca5',
+                    key: '<OpenCageData_API_Key_Here>',
                     q: fields.location,
                     no_annotations: 1,
                     limit: 1
